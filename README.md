@@ -1,6 +1,6 @@
 # Compaya-SMS-Gateway
 
-This is a .NET/C# implementation of the Compaya SMS Gateway API (https://api.cpsms.dk/documentation/index.html)
+This is a .NET/C# implementation of the Compaya SMS Gateway API (https://api.cpsms.dk/documentation/index.html). The only dependency is Newtonsoft.Json version 9.0.1+
 
 Before you begin you need:
 - A username from https://www.cpsms.dk
