@@ -16,5 +16,7 @@
         public static string ContactList = "https://api.cpsms.dk/v2/listcontacts/";
         public static string ContactUpdate  = "https://api.cpsms.dk/v2/updatecontact";
         public static string ContactDelete = "https://api.cpsms.dk/v2/deletecontact";
+
+        public static string LogList = "https://api.cpsms.dk/v2/getlog";
     }
 }
