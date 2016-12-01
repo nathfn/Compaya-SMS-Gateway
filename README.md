@@ -22,7 +22,8 @@ And then you can send an SMS:
 
 smsRepository.SendSms(new[] { "4512345678" }, "Hello world!" "4587654321");
 
-Almost all interaction with the repositories will return an object which is a sub class of ResponseModel.cs. This model will always return the following:
+Almost all interaction with the repositories will return an object which is a subclass of ResponseModel.cs. This model will always return the following:
 
 .HttpStatusCode: The status code (if any) returned from the API call. This can be used to test against. See more about status codes here: https://api.cpsms.dk/documentation/index.html#errors
+
 .Exception: The exception thrown by the code (if any). Can be useful for debugging or logging.
