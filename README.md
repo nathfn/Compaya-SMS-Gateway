@@ -3,6 +3,7 @@
 This is a .NET/C# implementation of the Compaya SMS Gateway API (https://api.cpsms.dk/documentation/index.html). The only dependency is Newtonsoft.Json version 9.0.1+
 
 Before you begin you need:
+- Download the latest release: https://github.com/nathfn/Compaya-SMS-Gateway/releases/download/v1.0.0.0/CompayaSmsGateway-1.0.0.0.zip
 - A username from https://www.cpsms.dk
 - An API key which can be obtained after creating the user above
 
