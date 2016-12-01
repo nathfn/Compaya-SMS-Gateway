@@ -5,10 +5,10 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("CompayaSmsGateway")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Compaya SMS Gateway")]
+[assembly: AssemblyDescription("A C#/.NET wrapper for interacting with the Compaya SMS Gateway. More info at https://www.cpsms.dk")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("SmartBird IVS")]
 [assembly: AssemblyProduct("CompayaSmsGateway")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]

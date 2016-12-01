@@ -10,9 +10,7 @@ namespace CompayaSmsGateway.Repositories
 {
     public class LogRepository: BaseRepository
     {
-        public LogRepository(string username, string apiKey) : base(username, apiKey)
-        {
-        }
+        public LogRepository(string username, string apiKey) : base(username, apiKey){}
 
         public LogListResponseModel ListLog(string to = "", int fromDate = 0, int toDate = 0)
         {
@@ -21,11 +19,11 @@ namespace CompayaSmsGateway.Repositories
             {
                 var url = Endpoints.LogList;
                 if (fromDate != 0 && toDate != 0 && !string.IsNullOrEmpty(to))
-                    url = url + "/" + fromDate + "/" + toDate + "/" + to;
+                    url = string.Format(url + "/{0}/{1}/{2}", fromDate, toDate, to);
                 else if (fromDate != 0 && toDate != 0)
-                    url = url + "/" + fromDate + "/" + toDate;
+                    url = string.Format(url + "/{0}/{1}", fromDate, toDate);
                 else if (!string.IsNullOrEmpty(to))
-                    url += "/" + to;
+                    url = string.Format(url + "/{0}", to);
 
                 int httpStatusCode;
                 var responseJson = ExecuteEmptyRequest(url, out httpStatusCode, "GET");

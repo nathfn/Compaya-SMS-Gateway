@@ -19,9 +19,9 @@ namespace CompayaSmsGateway.Repositories
         protected BaseRepository(string username, string apiKey)
         {
             if (string.IsNullOrEmpty(username))
-                throw new ArgumentNullException(nameof(username));
+                throw new ArgumentNullException(nameof(username), "The parameter 'username' is empty or null. You must specify this to use the repository!");
             if (string.IsNullOrEmpty(apiKey))
-                throw new ArgumentNullException(nameof(apiKey));
+                throw new ArgumentNullException(nameof(apiKey), "The parameter 'apiKey' is empty or null. You must specify this to use the repository!");
             Username = username;
             ApiKey = apiKey;
         }
